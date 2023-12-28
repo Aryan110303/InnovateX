@@ -87,6 +87,7 @@ html{
   font-family: Inter,sans-serif;
   font-size: 55px;
   font-weight: 700;
+  line-height: 60px;
 }
 .content{
   font-family: Inter,sans-serif;
@@ -3960,13 +3961,15 @@ figcaption {
 .righty .image-collage .img {
   border-radius: 4px;
   position: absolute;
+  width: 280px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .righty .image-collage .img1 {
-  transform: translate(-80%, -100%);
+  transform: translate(-50%, -70%);
+  z-index: 99;
 }
 .righty .image-collage .img2 {
   transform: translate(-130%, 20%);
@@ -7991,5 +7994,18 @@ ul {
     margin: 0%;
     height: 50vh;
   }
+}
+.btn1{
+  transform: 0.4s;
+}
+.image-collage .img {
+  transition: 0.4s;
+}
+.btn1:hover, .btn2:hover {
+  box-shadow: 0 0 5px #8081dd,
+  0 0 25px #8081dd,
+  0 0 30px #8081dd,
+  0 0 200px #8081dd;
+  transform: scale(1.03);
 }
 
